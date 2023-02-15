@@ -11,7 +11,7 @@ import {Ecommerce,Orders,Calendar,Employees,Stacked,Pyramid,Customers,Kanban,Are
 
 
 function App() {
-  const activeMenu=false;
+  const activeMenu=true;
 
   return (
     <>
@@ -62,8 +62,6 @@ function App() {
               <Route path='/colormapping' element={<ColorMapping/>} />
               <Route path='/pyramid' element={<Pyramid/>} />
               <Route path='/stacked' element={<Stacked/>} />
-              
-
             </Routes>
         </div>
      </div>
