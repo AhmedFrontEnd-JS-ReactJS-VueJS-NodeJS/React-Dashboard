@@ -18,7 +18,7 @@ const Ecommerce = () => {
           <Button color='white' bgColor="black" text="Download" border="" borderRadius="10px" size='md'  />
         </div>
         </div>
-        <div className='flex m-3 flex-wrap justify-center gap-1 items-center '>
+        <div className='flex m-3 flex-wrap justify-content gap-1 items-center '>
           {earningData.map((item)=>(
             <div key={item.title} className="bg-white dark:text-gray-200 dark:bg-set-secondary-bg md:56 p-5 pt-9 rounded-2xl ">
                <button type='button' style={{color:item.iconColor,backgroundColor:item.iconBg}} className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl">
@@ -31,12 +31,15 @@ const Ecommerce = () => {
                 {item.percentage}
                 </span>
                 </p>
-                <p className='text-sm text-gray-400 mt-1'>
+                <p className='text-sm text-gray-400 mt-1 '>
                   {item.title}
                 </p>
             </div>
           ))}
         </div>
+      </div>
+      <div className='flex gap-10'>
+
       </div>
     </div>
   )
