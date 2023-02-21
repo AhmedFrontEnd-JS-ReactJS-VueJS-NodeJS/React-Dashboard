@@ -5,7 +5,22 @@ import { SparklineComponent,Inject,SparklineTooltip } from '@syncfusion/ej2-reac
 const Sparkline = ({id,height,width,color,data,type,currentColor}) => {
   return (
     <div>
-        
+         <SparklineComponent
+         id={id}
+         height={height}
+         width={width}
+         lineWidth={1}
+         valueType='Numeric'
+         fill={color}
+         border={{color:currentColor,width:2}}
+         dataSource={data}
+         xName="x"
+         yName='y'
+         
+         >
+            <Inject services={[SparklineTooltip]}/>
+         </SparklineComponent>
+
     </div>
   )
 }
