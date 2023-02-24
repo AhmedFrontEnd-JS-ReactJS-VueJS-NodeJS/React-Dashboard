@@ -40,7 +40,7 @@ function App() {
           </div>
 
         <div>
-
+            <Themesettings></Themesettings>
             <Routes>
               {/* Dashboard */}
               <Route path='/' element={<Ecommerce/>}/>
